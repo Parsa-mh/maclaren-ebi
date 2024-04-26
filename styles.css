@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Nice";
+    src: url(./Font/FjallaOne-Regular.ttf);
+  }
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+    transition: 1s;
+}
+.main{
+    width: 100%;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    padding: 12px 10px;
+    background-color: black;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul a {
+    display: block;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-family: "Nice";
+    position: relative;
+}
+
+.navbar ul:has(a:hover) a:not(:hover) {
+    filter: blur(5px);
+}
+
+.page-content {
+    text-align: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content .inner-content .heading {
+    font-size: 10rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.page-content .inner-content p {
+    font-family: "Orbitron", sans-serif;
+}
+
+.page-content .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-content .buttons a {
+    display: block;
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    margin: 0 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    min-width: 100px;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(60px);
+    overflow:auto;
+    z-index: 1;
+    border: 1px solid #ffffff1e;
+}
+.lo{
+    width: 150px;
+  height: 50px;
+  /* margin-right: 5px; */
+  left: 300px;
+}
+.login
+{
+    display:inline-block;
+    margin: 0 16px;
+    padding: 10px 12px;
+    border-radius: 17px;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #ffffff1e;
+}
+.login a
+{
+    text-decoration: none;
+    font-family: "Nice";
+}
+.login:hover
+{
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+.miane
+{
+    margin:20px auto;
+    background-color: red;
+    box-sizing: border-box;
+
+}
+.video2{
+    width: 50%;
+}
